@@ -1,1 +1,166 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: 0;
+
+  line-height: 120%;
+
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+abbr {
+  cursor: help;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: inherit;
+
+  color: inherit;
+}
+
+u {
+  text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.07em;
+}
+
+hr {
+  border: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+  line-height: inherit;
+  color: inherit;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-variant: inherit;
+  font-stretch: inherit;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: "IBM Plex Mono", 'Courier New', Courier, monospace;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+
+  /* stylelint-disable-next-line property-no-unknown */
+  aspect-ratio: attr(width) / attr(height);
+
+  width: 100%;
+  height: auto;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+
+  user-select: none;
+  pointer-events: none;
+}
+
+.no-last-margin > *:last-child {
+  margin-block-end: 0;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-width: 0;
+  border-style: solid;
+  border-color: inherit;
+}
+
+pre {
+  background: #e9edf2;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+code {
+  display: inline-block;
+
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  padding-block-start: 10px;
+  padding-block-end: 10px;
+
+  background: #e9edf2;
+
+  word-spacing: normal;
+  color: #3c4b57;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8em;
+  font-style: normal;
+  hyphens: none;
+}

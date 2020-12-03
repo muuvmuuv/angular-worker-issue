@@ -1,0 +1,9 @@
+main {
+  padding: 120px;
+}
+
+section {
+  margin-block-end: 20px;
+  padding: 20px;
+  border: 1px solid gray;
+}
