@@ -2,15 +2,16 @@
   "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "./tmp/app",
+    "outDir": "./tmp/worker",
+    "lib": [
+      "ES2018",
+      "ES2019.Array",
+      "WebWorker"
+    ],
     "types": []
   },
-  "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
-  ],
   "include": [
+    "src/**/*.worker.ts",
     "src/**/*.d.ts"
   ]
 }
