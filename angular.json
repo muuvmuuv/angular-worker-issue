@@ -38,13 +38,13 @@
               "highlight.js"
             ],
             "webWorkerTsConfig": "tsconfig.worker.json"
-          },
-          "serve": {
-            "builder": "@angular-devkit/build-angular:dev-server",
-            "options": {
-              "browserTarget": "test:build",
-              "hmr": true
-            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "test:build",
+            "hmr": true
           }
         }
       }
