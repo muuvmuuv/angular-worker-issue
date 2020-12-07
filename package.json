@@ -4,8 +4,16 @@
   "private": "true",
   "scripts": {
     "start": "ng serve",
+    "server": "lite-server --baseDir=dist",
     "build": "ng build",
-    "prod": "ng build --prod"
+    "prod": "ng build --prod",
+    "force": "npm-force-resolutions && npm i && npm ls @angular-devkit/{architect,build-angular,core}",
+    "ng": "ng"
+  },
+  "resolutions": {
+    "@angular-devkit/architect": "*",
+    "@angular-devkit/build-angular": "*",
+    "@angular-devkit/core": "*"
   },
   "dependencies": {
     "@angular/common": "^11.0.3",
@@ -25,6 +33,8 @@
     "@angular/cli": "^11.0.3",
     "@angular/compiler-cli": "^11.0.3",
     "@types/node": "~14.14.10",
+    "lite-server": "^2.6.1",
+    "npm-force-resolutions": "0.0.3",
     "typescript": "4.0.5"
   }
 }
