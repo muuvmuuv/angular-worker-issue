@@ -24,8 +24,12 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
+          "builder": "@angular-devkit/build-angular:browser",
+          // "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            // "customWebpackConfig": {
+            //   "path": "webpack.config.js"
+            // },
             "main": "src/main.ts",
             "index": "src/index.html",
             "polyfills": "src/polyfills.ts",
@@ -49,10 +53,7 @@
               "graphql-tag",
               "highlight.js"
             ],
-            "webWorkerTsConfig": "tsconfig.worker.json",
-            "customWebpackConfig": {
-              "path": "webpack.config.js"
-            }
+            "webWorkerTsConfig": "tsconfig.worker.json"
           }
         },
         "serve": {
