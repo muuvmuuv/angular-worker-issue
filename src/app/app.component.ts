@@ -10,9 +10,6 @@ import data from './data.json'
 export class AppComponent implements OnInit {
   buildEnv = BUILD_ENV
 
-  varOne: string
-  varTwo: number
-
   data = data
 
   ngOnInit(): void {
