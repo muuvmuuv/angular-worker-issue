@@ -9,6 +9,7 @@ import { of } from 'rxjs'
 })
 export class TwoPageComponent implements OnInit {
   public variable: number
+  public variableType: string
 
   ngOnInit(): void {
     fromWorker<string, number>(
@@ -16,6 +17,7 @@ export class TwoPageComponent implements OnInit {
       of("91528391")
     ).subscribe((outgoing) => {
       this.variable = outgoing
+      this.variableType = typeof outgoing
     })
   }
 }
