@@ -10,7 +10,7 @@ import data from './data.json'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'test';
+  buildEnv = BUILD_ENV
 
   varOne: string
   varTwo: number
