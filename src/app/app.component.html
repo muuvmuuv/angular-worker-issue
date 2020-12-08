@@ -1,15 +1,18 @@
 <main>
   <h1>{{ buildEnv }}</h1>
   <section>
-    <h2>Var one worker result</h2>
-    <pre><code>{{ varOne | json }}</code></pre>
-  </section>
-  <section>
-    <h2>Var two worker result</h2>
-    <pre><code>{{ varTwo | json }}</code></pre>
-  </section>
-  <section>
     <h2>Data JSON import</h2>
     <pre><code>{{ data | json }}</code></pre>
   </section>
+  <hr>
+  <ul>
+    <li>
+      <a [routerLink]="[ '/one' ]">One</a>
+    </li>
+    <li>
+      <a [routerLink]="[ '/two' ]">Two</a>
+    </li>
+  </ul>
+  <hr>
+  <router-outlet></router-outlet>
 </main>
