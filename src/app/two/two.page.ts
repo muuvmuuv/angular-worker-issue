@@ -8,12 +8,12 @@ import { of } from 'rxjs'
   styleUrls: ['./two.page.css'],
 })
 export class TwoPageComponent implements OnInit {
-  public variable: string
+  public variable: number
 
   ngOnInit(): void {
-    fromWorker<number, string>(
+    fromWorker<string, number>(
       () => new Worker('./two.worker.ts', { type: 'module' }),
-      of(91528391)
+      of("91528391")
     ).subscribe((outgoing) => {
       this.variable = outgoing
     })
