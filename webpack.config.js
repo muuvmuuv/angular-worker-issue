@@ -1,4 +1,4 @@
-// const webpack = require('webpack')
+const webpack = require('webpack')
 
 module.exports = async (config, argv) => {
   // force setting the correct node env
@@ -9,11 +9,11 @@ module.exports = async (config, argv) => {
   // Define global vars
   //
 
-  // config.plugins.push(
-  //   new webpack.DefinePlugin({
-  //     BUILD_ENV: JSON.stringify(process.env.NODE_ENV),
-  //   })
-  // )
+  config.plugins.push(
+    new webpack.DefinePlugin({
+      BUILD_ENV: JSON.stringify(process.env.NODE_ENV),
+    })
+  )
 
   return config
 }
